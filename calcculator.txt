@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WEB DESIGN CLASS</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+<body style="background-image: url('office_image.jpg');">
+<h1>CALCURRENCY
+</h1>
+
+<fieldset>
+	<table>
+	<tr>
+	<td>
+	<fieldset>
+	<legend style="color:white">BANK RATES</legend>
+	<select id="Currency">
+		<option value="usdcalc">USD</option>
+		<option value="gbpcalc">GBP</option>
+		<option value="eurocalc">EURO</option>
+	</select>
+	<p></p>
+	<form name="test">
+	<input id= "otherCurrencyAmount" placeholder="Enter Amount" type="text" name="text" >
+	</form>
+	<p></p>
+	<fieldset id="result" style="color:white">	
+	</fieldset>
+	<p></p>
+	</button>
+	<button id="" onclick="Amount()" >Calculate
+	</button>
+	<p style="color:white">Show current rate</p>
+	<fieldset id="rate" style="color:white">
+		
+	</fieldset>
+	<p></p>
+	<button id="" onclick="usdRate()" >Display Rate Today
+</fieldset>
+</td>
+<td>
+<fieldset>
+	<legend style="color:white">BLACK MARKET</legend>
+	<select id="Currency">
+		<option value="usdcalc">USD</option>
+		<option value="gbpcalc">GBP</option>
+		<option value="eurocalc">EURO</option>
+	</select>
+	<p></p>
+	<form name="test">
+	<input id= "otherCurrencyAmount" placeholder="Enter Amount" type="text" name="text" >
+	</form>
+	<p></p>
+	<fieldset id="result" style="color:white">	
+	</fieldset>
+	<p></p>
+	</button>
+	<button id="" onclick="Amount()" >Calculate
+	</button>
+	<p style="color:white">Show current rate</p>
+	<fieldset id="rate" style="color:white">
+		
+	</fieldset>
+	<p></p>
+	<button id="" onclick="usdRate()" >Display Rate Today
+</fieldset>
+</td>
+<td>
+	<fieldset>
+	<legend style="color:white">CRYPTO CURRENCY</legend>
+	<select id="Currency">
+		<option value="usdcalc">USD</option>
+		<option value="gbpcalc">GBP</option>
+		<option value="eurocalc">EURO</option>
+	</select>
+	<p></p>
+	<form name="test">
+	<input id= "otherCurrencyAmount" placeholder="Enter Amount" type="text" name="text" >
+	</form>
+	<p></p>
+	<fieldset id="result" style="color:white">	
+	</fieldset>
+	<p></p>
+	</button>
+	<button id="" onclick="Amount()" >Calculate
+	</button>
+	<p style="color:white">Show current rate</p>
+	<fieldset id="rate" style="color:white">
+		
+	</fieldset>
+	<p></p>
+	<button id="" onclick="usdRate()" >Display Rate Today
+</fieldset>
+</td>
+</tr>
+</table>
+</fieldset>
+<script>
+
+		
+	function usdRate(){
+		var e = document.getElementById("Currency");
+		var value = e.value;
+		var text = e.options[e.selectedIndex].text;
+		if(text == "USD"){
+		var r = 447;
+		document.getElementById("rate").innerHTML = ("N" + r + "/usd");
+
+
+		}else if(text == "GBP"){
+		var r = 512;
+		document.getElementById("rate").innerHTML = ("N" + r + "/gbp");
+		
+		}else{
+		var r = 462;
+		document.getElementById("rate").innerHTML = ("N" + r + "/euro");
+		
+	}
+
+	
+		
+	}
+	function Amount(){
+		var e = document.getElementById("Currency");
+		var value = e.value;
+		var text = e.options[e.selectedIndex].text;
+		if(text == "USD"){
+		var r = 447;
+		var a = document.getElementById("otherCurrencyAmount").value;
+		var result = a*r;
+		var res = result.toLocaleString();
+		document.getElementById("result").innerHTML = ("N" + res);
+	}else if(text == "GBP"){
+		var r = 512;
+		var a = document.getElementById("otherCurrencyAmount").value;
+		var result = a*r;
+		var res = result.toLocaleString();
+		document.getElementById("result").innerHTML = ("N" + res);
+		
+	}else{
+		var r = 462;
+		var a = document.getElementById("otherCurrencyAmount").value;
+		var result = a*r;
+		var res = result.toLocaleString();
+		document.getElementById("result").innerHTML = ("N" + res);
+	}
+}
+</script>
+
+
+</body>
+<p>
+<a href="">Click here</a>
+</p>
+</html>
