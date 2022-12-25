@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>CODE ARENA</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        
+        <p>
+            CODE ACADEMY
+        </p>
+        <fieldset>
+        <p1>
+            We expose your children to an opportunity that keeps them relevant in future as we catch them young 
+            in computer programming. You sure don't want to regret not starting now.
+        </p1>
+        <br>
+
+        </br>
+        <p2>
+            The opportunity you give your children now counts tomorrow much more than you could ever expect.
+            Good opportunities always come with a cost. Not always financial costs, sometimes the cost could 
+            be the risk involved and other times it could be the sacrifice and time invested. 
+            People put interest on what they see value in, therefore mosttimes get to ignore every other 
+            thing they are not aware of its value. 
+            To establish a bright future for your children, you need to start now to lighten up that life 
+            pathways by giving leading them through the right opportunities. They are too young to decide which is a good opportunity, but you are 
+            there to guide their path. Click <a href="https://uzymba.w3spaces.com/proposal.html">here</a> to start up. 
+        </p2>
+        </fieldset>
+        <br>
+
+        </br>
+
+     	<fieldset>      
+        <fieldset>
+          <legend>Register</legend>
+            
+		<div>
+        	       Category
+	        </div>
+            
+                <select id="Level">
+                    <option value="usdcalc">PRIMARY INSTITUTION</option>
+                    <option value="gbpcalc">SECONDARY INSTITUTION</option>
+                    <option value="eurocalc">TERTIARY INSTITUTION</option>
+                    <option value="eurocalc">WORKING INSTITUTION</option>
+                </select>
+                
+                <button id= "" onclick="displayCategory()" >Select
+                </button>
+		<div>
+		   <span id = "selected"></span>
+		</div>
+
+		<div>
+  		<input type="text" id="name" placeholder="Name">
+		</div>
+		<div>
+		   <span id = "selected1"></span>
+		</div>
+
+		<div>
+  		<input type="text" id="address" placeholder="Address">
+		</div>
+		<div>
+		   <span id = "selected2"></span>
+		</div>
+
+		<div>
+  		<input type="text" id="number" placeholder="Number">
+		</div>
+		<div>
+		   <span id = "selected3"></span>
+		</div>
+
+		<select id="Tenure">
+			<option value="select">---Select---</option>
+			<option value="usdcalc">Six months</option>
+                    	<option value="gbpcalc">Twelve months</option>
+                    	<option value="eurocalc">Eighteen months</option>
+                   	<option value="eurocalc">Twenty-Four months</option>
+                </select>
+  		
+           
+        </fieldset>
+	
+	
+	<fieldset>
+		<legend>The Experience</legend>
+   		<img src="kids_code.jpg" alt="Flowers in Chania" />
+	</fieldset>
+	</fieldset>
+
+
+
+	
+        
+            
+
+        <script>
+
+            function displayCategory(){
+		var e = document.getElementById("Level");
+                var text = e.options[e.selectedIndex].text;
+                if(text == "PRIMARY INSTITUTION"){
+                    document.getElementById("selected").innerHTML = ("Primary Institution Name");
+	            document.getElementById("selected1").innerHTML = ("Address");
+		    document.getElementById("selected2").innerHTML = ("Number of students");
+		    document.getElementById("selected3").innerHTML = ("Learning Tenure");
+
+
+                }else if(text == "SECONDARY INSTITUTION"){
+                    document.getElementById("selected").innerHTML = ("Secondary Institution Name");
+		    document.getElementById("selected1").innerHTML = ("Address");
+		    document.getElementById("selected2").innerHTML = ("Number of students");
+		    document.getElementById("selected3").innerHTML = ("Learning Tenure");
+                    }
+                else if(text == "TERTIARY INSTITUTION"){
+                    document.getElementById("selected").innerHTML = ("Tertiary Institution Name");
+		    document.getElementById("selected1").innerHTML = ("Address");
+		    document.getElementById("selected2").innerHTML = ("Number of students");
+		    document.getElementById("selected3").innerHTML = ("Learning Tenure");
+                    }
+                else {
+                    document.getElementById("selected").innerHTML = ("Employer Name");
+		    document.getElementById("selected1").innerHTML = ("Address");
+		    document.getElementById("selected2").innerHTML = ("Number of students");
+		    document.getElementById("selected3").innerHTML = ("Learning Tenure");
+                    }
+                
+            }
+            
+        </script>
+        
+    </body>
+
+</html>
